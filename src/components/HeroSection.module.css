@@ -1,0 +1,76 @@
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(10px); }
+}
+
+/* Fade in animation for text */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scale in animation for images */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Slow pulse animation */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.3; }
+}
+
+/* Animation classes */
+.animate-float { 
+  animation: float infinite ease-in-out; 
+}
+
+.animate-fadeIn { 
+  animation: fadeIn 0.5s ease-out; 
+}
+
+.animate-scaleIn { 
+  animation: scaleIn 0.5s ease-out; 
+}
+
+.animate-pulse-slow { 
+  animation: pulse-slow 4s infinite; 
+}
+
+/* Content editable styles */
+[contenteditable]:focus {
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: -0.5rem;
+}
+
+/* Additional component-specific styles */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.editable-hover {
+  cursor: text;
+  transition: all 0.2s ease;
+}
+
+.editable-hover:hover {
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+  border-radius: 0.5rem;
+}
