@@ -15,6 +15,6 @@ A responsive hero section with editable content and AI regeneration simulation.
 2. Run `npm install`
 3. Run `npm start`
 
-## Loom Video
+## Demo
 
-[Insert your Loom video link here]
+https://youtu.be/n3RxO7HYHtg
